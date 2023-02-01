@@ -241,7 +241,7 @@ export const configSchema = {
           type: "string",
           enum: ["FONT_SIZE"]
         },
-        defaultValue: { type: "string" }
+        defaultValue: { type: "number" }
       }
     },
     fontFamily: {
@@ -367,7 +367,13 @@ export const configSchema = {
           type: "string",
           enum: ["INTERVAL"]
         },
-        defaultValue: { type: "string" }
+        options: {
+          type: "array",
+          items: {
+            $ref: "#/definitions/styleElementOptions"
+          }
+        },
+        defaultValue: { type: "number" }
       }
     },
     fontColor: {

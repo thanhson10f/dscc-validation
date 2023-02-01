@@ -461,6 +461,12 @@ export declare const configSchema: {
                     type: string;
                     enum: string[];
                 };
+                options: {
+                    type: string;
+                    items: {
+                        $ref: string;
+                    };
+                };
                 defaultValue: {
                     type: string;
                 };
