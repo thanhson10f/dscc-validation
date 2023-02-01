@@ -370,7 +370,7 @@ export const configSchema = {
         options: {
           type: "array",
           items: {
-            $ref: "#/definitions/styleElementOptions"
+						$ref: "#/definitions/dataOptions"
           }
         },
         defaultValue: { type: "number" }
