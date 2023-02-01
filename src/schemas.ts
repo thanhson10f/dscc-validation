@@ -269,7 +269,7 @@ export const configSchema = {
           type: "string",
           enum: ["CHECKBOX"]
         },
-        defaultValue: { type: "string" }
+        defaultValue: { type: "boolean" }
       }
     },
     textInput: {
